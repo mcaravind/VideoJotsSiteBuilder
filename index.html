@@ -1,9 +1,28 @@
 ﻿<html>
 <head>
     <title>VideoJots SiteBuilder</title>
-
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- /.container -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btnCreate").click(function(){
+                var path = $("#answer").val();
+                loadFiles(path);
+            });
+        });
+    </script>
 </head>
 <body>
-
+<div class="container">
+Home path:
+<input type="email" class="form-control" id="answer" placeholder="Enter answer">
+    <button type="button" id="btnCreate">Create</button>
+</div>
 </body>
 </html>
